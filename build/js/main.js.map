@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["'use strict';\n\n(function () {\n  function main() {\n    console.log('main javascript');\n  }\n\n  main();\n\n  var newText = 'module testing';\n\n  window.module.print(newText);\n})();\n"],"file":"main.js"}

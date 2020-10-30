@@ -1,0 +1,45 @@
+@media (max-width: 1024px) {
+  // q
+}
+
+@media (max-width: 767px) {
+  // q
+}
+
+
+.container {
+  width: auto;
+
+  background-color: #ffb0b0;
+  border: 1px solid darkgreen;
+
+  @media (max-width: 1024px) {
+    // q
+  }
+
+  @media (max-width: 767px) {
+    // q
+  }
+
+
+  @media (min-width: $small_breakpoint) {
+    padding: 0 30px;
+
+    background-color: #eb9090;
+  }
+
+  @media (min-width: $medium_breakpoint) {
+    background-color: #c77979;
+  }
+
+  @media (min-width: $large_breakpoint) {
+    background-color: #a36060;
+  }
+
+  @media (min-width: $extralarge_breakpoint) {
+    width: $extralarge_width;
+    padding: 0 0;
+
+    background-color: #794848;
+  }
+}
