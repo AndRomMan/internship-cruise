@@ -1,8 +1,10 @@
-/* eslint-disable no-unused-vars */
-// npx htmlhint projectFolder/**/*.html
-// npx eslint projectFolder/**/*.js
+
+// команды запуска npm-plugins для тестирования
+// npx htmlhint source/**/*.html
+// npx eslint source/**/*.js
 // npx eslint --fix source/js/*.js
-// npx stylelint projectFolder/**/*.css
+// npx stylelint source/**/*.scss
+// npx stylelint build/**/*.css
 
 'use strict';
 // подключаем Gulp
@@ -71,6 +73,7 @@ const path = {
   img: {
     sourceFolder: source + 'img/',
     source: source + 'img/*.{jpg,png,svg}',
+    sourceWebp: source + 'img/*.{jpg,png}',
     watch: source + 'img/**/*.{jpg,jpeg,png,svg}',
     compressedFolder: source + 'img/compressed/',
     build: build + 'img/',
@@ -155,11 +158,11 @@ function getCSS() {
 function getHTML() {
   return src(path.html.source)
     .pipe(plumber())
-    // .pipe(
-    //   fileinclude({
-    //     prefix: '@@',
-    //   })
-    // )
+    .pipe(
+      fileinclude({
+        prefix: '@@',
+      })
+    )
     .pipe(dest(path.html.build))
     .pipe(browsersync.stream());
 }
@@ -228,7 +231,7 @@ quality - Default: 75
 */
 function convertImgToWebp() {
   return (
-    src(path.img.sourceFolder + '{*.png, *.jpg}')
+    src(path.img.sourceWebp)
       .pipe(plumber())
       .pipe(imagemin([imageminWebp({quality: 70})]))
       // .pipe(imagemin([imageminWebp({quality: 75, method: 4})]))
@@ -267,7 +270,7 @@ function compressJpgPng() {
           quality: 75,
           progressive: true,
         }),
-        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.optipng({optimizationLevel: 3}),
         // imagemin.svgo({
         //   plugins: [{removeViewBox: false},
         //     {cleanupIDs: false}],

@@ -1,0 +1,35 @@
+.promo {
+  //
+}
+
+.promo h2 {
+  margin: 0 0 15px 0;
+
+  @include font(54px, 66px, 700, $font_light_color);
+
+
+  @media (max-width: $desktop_breakpoint) {
+    margin: 0 0 12px 0;
+
+    @include font(50px, 61px, 700, $font_light_color);
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    @include font(36px, 45px, 700, $font_light_color);
+  }
+}
+
+.promo p {
+  margin: 0 0 5px 0;
+
+  @include font(20px, 24px, 400, $font_light_color);
+
+
+  @media (max-width: $desktop_breakpoint) {
+    @include font(18px, 22px, 400, $font_light_color);
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    // q
+  }
+}

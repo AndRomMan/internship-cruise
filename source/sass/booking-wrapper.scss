@@ -1,0 +1,16 @@
+
+.booking-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 60px 50px 60px;
+
+  @media (max-width: $desktop_breakpoint) {
+    flex-direction: column;
+    padding: 49px 60px 101px 60px;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    padding: 20px 0 66px 0;
+  }
+}

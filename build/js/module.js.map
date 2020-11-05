@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["module.js"],"sourcesContent":["'use strict';\n\n(function () {\n  function print(text) {\n    console.log(text);\n  }\n  window.module = {\n    print: print,\n  };\n})();\n"],"file":"module.js"}

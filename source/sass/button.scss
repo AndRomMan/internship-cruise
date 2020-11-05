@@ -1,0 +1,25 @@
+
+.button {
+  margin-top: auto;
+  padding: 10px 10px;
+
+  text-align: center;
+
+  background-color: $background_light;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    outline: 4px solid $outline_color;
+  }
+
+
+  &:focus {
+    outline: 4px solid $outline_color;
+  }
+
+
+  &:active {
+    opacity: 0.7;
+  }
+}

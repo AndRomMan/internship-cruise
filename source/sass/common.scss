@@ -1,21 +1,35 @@
-// Для блока, у которого есть фоновое изображение, прописан фоновый цвет,
-// который соответствует преобладающему цвету изображения.
-// text-overflow: ellipsis
+body {
+  background-color: $background_light;
+}
 
-
-@mixin accentEffect {
-  outline: 2px solid $outline-color;
-
+a {
   &:hover {
-    // color: $basic_hover_accent;
-    // только в desktop режиме
+    outline: 4px solid $outline_color;
   }
+
 
   &:focus {
-    // @include outlineEffect;
+    outline: 4px solid $outline_color;
   }
 
+
   &:active {
-    opacity: 0.5;
+    opacity: 0.7;
+  }
+}
+
+input {
+  &:hover {
+    outline: 4px solid $outline_color;
+  }
+
+
+  &:focus {
+    outline: 4px solid $outline_color;
+  }
+
+
+  &:active {
+    opacity: 0.7;
   }
 }

@@ -1,0 +1,22 @@
+.footer-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
+
+  @media (max-width: $tablet_breakpoint) {
+    flex-direction: column;
+    align-items: flex-start;
+    // max-width: 100%;
+  }
+}
+
+.footer-nav__link {
+  @media (max-width: $tablet_breakpoint) {
+    margin: 0 0 22px 0;
+  }
+}
+
+.footer-nav__list {
+  //
+}

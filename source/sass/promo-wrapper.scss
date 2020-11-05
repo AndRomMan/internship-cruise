@@ -1,0 +1,14 @@
+.promo-wrapper {
+  min-height: 434px;
+  // padding: 210px 6.955% 180px 6.955%;
+  padding: 160px 8.2% 272px 8.2%;
+
+
+  @media (max-width: $desktop_breakpoint) {
+    padding: 190px 0 270px 0;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    padding: 110px 0 173px 0;
+  }
+}

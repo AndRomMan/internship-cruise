@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 0;
+
+  @media (max-width: $desktop_breakpoint) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    // padding: 20px 0;
+  }
+}
+
+.navbar__link {
+  flex-shrink: 0;
+}
+
+.navbar__list {
+  max-width: 90%;
+
+  @media (max-width: $tablet_breakpoint) {
+    max-width: 100%;
+  }
+}

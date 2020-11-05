@@ -1,0 +1,83 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.booking-form input {
+  margin: 0 0 20px 0;
+  padding: 11px 16px 11px 16px;
+
+  border: none;
+
+  @include font(14px , 21px, 400, $font_dark_color);
+}
+
+.booking-form button {
+  @include font(14px, 21px, 600, $font_dark_color);
+}
+
+
+.booking-form label[for="useragreement"] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include font(10px , 13px, 400, $font_light_color);
+
+  @media (max-width: $tablet_breakpoint) {
+    @include font(10px , 12px, 400, $font_light_color);
+  }
+}
+
+
+.booking-form__checkbox {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+
+  background-color: $background_light;
+  border: 1px solid $basic_dark_color;
+
+  & svg {
+    display: none;
+  }
+}
+
+
+input[type="checkbox"] {
+  &:checked {
+    & ~ .booking-form__checkbox {
+      & svg {
+        display: block;
+      }
+    }
+  }
+}
+
+input[id="useragreement"] {
+  &:hover {
+    & ~ .booking-form__checkbox {
+      outline: 4px solid $outline_color;
+    }
+  }
+
+
+  &:focus {
+    & ~ .booking-form__checkbox {
+      outline: 4px solid $outline_color;
+    }
+  }
+
+
+  &:active {
+    & ~ .booking-form__checkbox {
+      opacity: 0.7;
+    }
+  }
+}

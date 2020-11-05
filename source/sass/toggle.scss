@@ -1,0 +1,46 @@
+
+.toggle {
+  display: none;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    outline: 4px solid $outline_color;
+  }
+
+
+  &:focus {
+    outline: 4px solid $outline_color;
+  }
+
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.toggle--active {
+  display: block;
+}
+
+.toggle__icon {
+  display: none;
+
+  &--active {
+    @media (max-width: $tablet_breakpoint) {
+      display: block;
+    }
+  }
+}
+
+.toggle__icon--burger {
+  width: 30px;
+  height: 12px;
+}
+
+.toggle__icon--close {
+  width: 13px;
+  height: 13px;
+}

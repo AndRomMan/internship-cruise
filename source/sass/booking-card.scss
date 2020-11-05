@@ -1,0 +1,36 @@
+.booking-card {
+  flex-shrink: 0;
+  align-items: center;
+  // width: 416px;
+  width: 403px;
+  padding: 44px 50px 51px 50px;
+
+  background-color: $basic_dark_color;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+
+  @media (max-width: $desktop_breakpoint) {
+    //
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    width: 290px;
+    padding: 35px 30px 40px 30px;
+  }
+}
+
+.booking-card p {
+  margin: 0 0 28px 0;
+
+  @include font(18px, 27px, 500, $font_light_color);
+
+
+  @media (max-width: $tablet_breakpoint) {
+    max-width: 270px;
+    // padding: 0 50px 0 50px;
+
+    text-align: center;
+
+    @include font(18px, 25px, 500, $font_light_color);
+  }
+  //
+}

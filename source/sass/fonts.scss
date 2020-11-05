@@ -1,55 +1,7 @@
-// SCSS compilation check
-body {
-  // background-color: lightskyblue;
-}
-//  100:  Thin
-//  200:  Extra Light
-//  300:  Light
 //  400:  Regular
 //  500:  Medium
 //  600:  Semi-bold
 //  700:  Bold
-//  800:  Extra Bold
-//  900:  Black
-
-// Montserrat - title. Roboto - text.
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Roboto";
-
-  font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Roboto";
-
-  font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Roboto";
-
-  font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 900;
-  font-family: "Roboto";
-
-  font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff");
-}
-
 
 @font-face {
   font-style: normal;
@@ -90,8 +42,7 @@ body {
 
 @mixin font($size, $line_height, $weight, $color) {
   font: {
-    // family: "Montserrat", "Arial", sans-serif;
-    family: "Roboto", "Arial", "Helvetica", sans-serif;
+    family: "Montserrat", "Arial", "Helvetica", sans-serif;
     size: $size;
     weight: $weight;
   };

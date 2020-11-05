@@ -1,0 +1,15 @@
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 48px 0 48px 0;
+
+  @media (max-width: $desktop_breakpoint) {
+    padding: 40px 0 40px 0;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0 40px 0;
+  }
+}

@@ -1,0 +1,36 @@
+.description-text {
+  padding: 20px 5.857% 20px 0;
+
+
+  @media (max-width: $desktop_breakpoint) {
+    padding: 0 30px 20px 0;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    padding: 0 0 23px 0;
+  }
+}
+
+.description-text h3 {
+  margin: 0 0 24px 0;
+
+  @include font(28px, 42px, 600, $font_dark_color);
+
+  @media (max-width: $desktop_breakpoint) {
+    margin: 0 0 16px 0;
+
+    @include font(26px, 36px, 600, $font_dark_color);
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    margin: 0 0 15px 0;
+
+    @include font(24px, 34px, 600, $font_dark_color);
+  }
+}
+
+.description-text p {
+  margin: 0 0 10px 0;
+
+  @include font(16px, 24px, 400, $font_dark_color);
+}

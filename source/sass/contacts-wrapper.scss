@@ -1,0 +1,18 @@
+.contacts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 120px 0;
+
+  @media (max-width: $desktop_breakpoint) {
+    align-items: flex-start;
+    padding: 100px 0 100px 0;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0 62px 0;
+  }
+}

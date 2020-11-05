@@ -1,0 +1,96 @@
+.advantages-item {
+  position: relative;
+  // width: 31.03448275862069%;
+  // display: flex;
+  // flex-direction: column;
+
+  width: 31.035%;
+  margin: 0 0 30px 0;
+  padding: 80px 30px 20px 30px;
+
+  background-color: $background_light;
+
+  @media (max-width: $desktop_breakpoint) {
+    width: 30.385%;
+    // width: 30.383480825958%;
+    // min-height: 310px;
+    padding: 71px 10px 14px 20px;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    width: 100%;
+    margin: 0 0 30px 0;
+    // min-height: 250px;
+    padding: 71px 20px 14px 20px;
+    // padding: 71px 10px 14px 20px;
+  }
+}
+
+
+.advantages-item h3 {
+  margin: 0 0 12px 0;
+
+  @include font(18px, 25px, 500, $font_dark_color);
+
+  @media (max-width: $desktop_breakpoint) {
+    margin: 0 0 10px 0;
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    // margin: 0 0 30px 0;
+    padding-right: 30%;
+  }
+}
+
+.advantages-item p {
+  margin: 0 0 5px 0;
+
+  @include font(14px, 20px, 400, $font_dark_color);
+
+  @media (max-width: $desktop_breakpoint) {
+    // @include font(14px, 20px, 400, $font_dark_color);
+  }
+}
+
+.advantages-item__icon {
+  position: absolute;
+  top: 45px;
+  left: 48px;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  @media (max-width: $desktop_breakpoint) {
+    top: 38px;
+    left: 36px;
+  }
+}
+
+.advantages-item__icon--ship {
+  width: 27px;
+  height: 32px;
+
+  @media (max-width: $desktop_breakpoint) {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+.advantages-item__icon--ticks {
+  width: 38px;
+  height: 21px;
+
+  @media (max-width: $desktop_breakpoint) {
+    width: 33px;
+    height: 19px;
+  }
+}
+
+.advantages-item__icon--boat {
+  width: 42px;
+  height: 15px;
+
+  @media (max-width: $desktop_breakpoint) {
+    width: 38px;
+    height: 13px;
+  }
+}

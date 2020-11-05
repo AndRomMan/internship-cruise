@@ -1,0 +1,15 @@
+.button-wrapper {
+  position: absolute;
+  top: 19px;
+  right: 15px;
+
+  display: none;
+
+  @media (max-width: $tablet_breakpoint) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+}

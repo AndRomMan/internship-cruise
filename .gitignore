@@ -11,6 +11,6 @@ node_modules/
 npm-debug.*
 source/css/
 Thumbs.db
-task.md
-index_text.md
+check-list.md
+debug.log
 # путь от корня! /*.txt ; /doc/setting/*.txt = doc/setting/*.txt

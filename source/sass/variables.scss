@@ -1,55 +1,61 @@
-// SCSS compilation check
-body {
-  // background-color: lightskyblue;
-}
-
-@media (max-width: 1366px) {
-  // q
-}
-
-@media (max-width: 767px) {
-  // q
-}
-
-
 // background for retina display
 $retina-dppx: 1.5dppx;
 $retina-dpi: 144dpi;
 // (min-resolution: $retina-dpi),
 // (min-resolution: $retina-dppx)
 
-// -------------------------- extrasmall
-$extrasmall_width: 320px;
-$extrasmall_padding: 15px;
-// -------------------------- medium
-$medium_breakpoint: 767px;
-$medium_padding: 45px;
-$medium_width: 768px;
-// -------------------------- extralarge
-$extralarge_breakpoint: 1365px;
-$extralarge_width: 1366px;
-$extralarge_padding: 103px;
+// -------------------------- mobile
+$mobile_padding: 15px;
+// $mobile_width: 320px;
+// $mobile_breakpoint: 321px;
+// $mobile_width: 90.625%;
+
+// -------------------------- tablet
+$tablet_breakpoint: 767px;
+$tablet_padding: 45px;
+// $tablet_width: 768px;
+// $tablet_width: 88.28125%;
+
+// -------------------------- desktop
+$desktop_breakpoint: 1023px;
+$desktop_padding: 7.54026%;
+// $desktop_padding: 103px;
+// $desktop_width: 1024px;
+// $desktop_width: 84.9194729%;
 
 // -------------------------- basic colors
-// $basic_color: #ce5d4e;
+$basic_dark_color: #011c40;
+$basic_light_color: #f9fbfd;
+$card_light_color: #d8d8d9;
 
-// -------------------------- font colors
-$font_dark: #141517;
-// -------------------------- border colors
-$border-color: #8b3006;
+// -------------------------- fonts
+$font_dark_color: #011c40;
+$font_light_color: #f9fbfd;
+$font_card_color: #d8d8d9;
+
+// @include font($size, $line_height, $weight, $color);
 
 // -------------------------- background colors
-// $background_light: #9b7b57;
-
-// font($size, $line_height, $weight, $color)
-// $weight 400 , 700
-// @include font(20px, 1.2, 400, $font_dark);
-
+$header_background: #004b88;
+$advantages_background: #e3ecf6;
+$booking_background: #84c5e6;
+$basic_dark: #011c40;
+$background_light: #f9fbfd;
 
 // -------------------------- effect colors
 // $accent_color: #ce5d4e;
-// $outline_color: rgb(16, 33, 190);
+$outline_color: #2770b4;
+
 
 // .button:hover,
 // .button:focus,
 // .button:active
+// -------------------------- technology
+
+// @media (max-width: $desktop_breakpoint) {
+//   //
+// }
+
+// @media (max-width: $tablet_breakpoint) {
+//   //
+// }

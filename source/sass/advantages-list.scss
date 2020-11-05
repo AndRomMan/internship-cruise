@@ -1,0 +1,17 @@
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (max-width: $desktop_breakpoint) {
+    //
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    flex-direction: column;
+  }
+}

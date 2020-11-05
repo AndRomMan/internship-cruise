@@ -1,0 +1,36 @@
+.booking {
+  background-color: $booking_background;
+  background-image: url("../img/booking-back_desk@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-back_desk@2x.jpg");
+  }
+
+
+  @media (max-width: $desktop_breakpoint) {
+    background-image: url("../img/booking-back_tab@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-back_tab@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet_breakpoint) {
+    background-image: url("../img/booking-back_mob@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-back_mob@2x.jpg");
+    }
+  }
+}
+
+.booking__appeal {
+  //
+}
+
+.booking__card {
+  //
+}

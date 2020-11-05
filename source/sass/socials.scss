@@ -1,0 +1,28 @@
+.socials {
+  margin-left: 20px;
+
+  @media (max-width: $desktop_breakpoint) {
+    margin-left: 10px;
+  }
+
+
+  @media (max-width: $tablet_breakpoint) {
+    margin: 0;
+  }
+}
+
+.socials__list {
+  //
+}
+
+.socials__item {
+  //
+}
+
+.socials__link {
+  //
+}
+
+.socials__icon {
+  //
+}
