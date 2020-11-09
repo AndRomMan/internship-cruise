@@ -52,23 +52,29 @@
 }
 
 
-.contacts-text__tel {
+a.contacts-text__tel {
   &:hover {
     & .contacts-text__icon {
-      outline: 4px solid $outline_color;
+      left: -30px;
+
+      outline: $underline_height solid $outline_color;
     }
   }
 
 
   &:focus {
     & .contacts-text__icon {
-      outline: 4px solid $outline_color;
+      left: -30px;
+
+      outline: $underline_height solid $outline_color;
     }
   }
 
 
   &:active {
     & .contacts-text__icon {
+      left: -30px;
+
       opacity: 0.7;
     }
   }

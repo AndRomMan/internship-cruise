@@ -87,14 +87,50 @@ a {
 body {
   background-color: #f9fbfd; }
 
-a:hover {
-  outline: 4px solid #2770b4; }
+a[href]:hover {
+  position: relative;
+  outline: none; }
+  a[href]:hover::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2770b4; }
+    @media (max-width: 767px) {
+      a[href]:hover::after {
+        top: 20px; } }
 
-a:focus {
-  outline: 4px solid #2770b4; }
+a[href]:focus {
+  position: relative;
+  outline: none; }
+  a[href]:focus::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2770b4; }
+    @media (max-width: 767px) {
+      a[href]:focus::after {
+        top: 20px; } }
 
-a:active {
+a[href]:active {
+  outline: none;
   opacity: 0.7; }
+
+a[class="button"] {
+  position: static; }
+  a[class="button"]::after {
+    display: none; }
+  a[class="button"]:hover {
+    outline: 4px solid #2770b4; }
+  a[class="button"]:focus {
+    outline: 4px solid #2770b4; }
+  a[class="button"]:active {
+    opacity: 0.7; }
 
 input:hover {
   outline: 4px solid #2770b4; }
@@ -1139,13 +1175,16 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
     .contacts-text__icon--phone {
       margin-top: 0; } }
 
-.contacts-text__tel:hover .contacts-text__icon {
+a.contacts-text__tel:hover .contacts-text__icon {
+  left: -30px;
   outline: 4px solid #2770b4; }
 
-.contacts-text__tel:focus .contacts-text__icon {
+a.contacts-text__tel:focus .contacts-text__icon {
+  left: -30px;
   outline: 4px solid #2770b4; }
 
-.contacts-text__tel:active .contacts-text__icon {
+a.contacts-text__tel:active .contacts-text__icon {
+  left: -30px;
   opacity: 0.7; }
 
 .contacts-text-wrapper {

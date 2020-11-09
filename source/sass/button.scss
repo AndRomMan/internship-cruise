@@ -10,12 +10,12 @@
   cursor: pointer;
 
   &:hover {
-    outline: 4px solid $outline_color;
+    outline: $underline_height solid $outline_color;
   }
 
 
   &:focus {
-    outline: 4px solid $outline_color;
+    outline: $underline_height solid $outline_color;
   }
 
 

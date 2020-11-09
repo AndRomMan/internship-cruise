@@ -63,14 +63,14 @@ input[type="checkbox"] {
 input[id="useragreement"] {
   &:hover {
     & ~ .booking-form__checkbox {
-      outline: 4px solid $outline_color;
+      outline: $underline_height solid $outline_color;
     }
   }
 
 
   &:focus {
     & ~ .booking-form__checkbox {
-      outline: 4px solid $outline_color;
+      outline: $underline_height solid $outline_color;
     }
   }
 
