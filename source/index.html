@@ -69,8 +69,21 @@
             </svg>
           </button>
         </div>
-
       </div>
+
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/header-back_desk@1x.webp 1x, img/header-back_desk@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/header-back_tab@1x.webp 1x, img/header-back_tab@2x.webp 2x">
+        <source type="image/webp" srcset="img/header-back_mob@1x.webp 1x, img/header-back_mob@2x.webp 2x">
+
+        <!-- 1х: 1366px; 2x: 2732px -->
+        <source media="(min-width: 1024px)" srcset="img/header-back_desk@1x.jpg 1x, img/header-back_desk@2x.jpg 2x">
+        <!-- 1х: 768px; 2x: 1536px -->
+        <source media="(min-width: 768px)" srcset="img/header-back_tab@1x.jpg 1x, img/header-back_tab@2x.jpg 2x">
+        <!-- 1х: 320px; 2x: 640px -->
+        <img class="site-header__back" src="img/header-back_mob@1x.jpg" srcset="img/header-back_mob@2x.jpg 2x" alt="Типичный пейзаж Антарктики" width="320" height="500">
+      </picture>
+
     </header>
 
     <main class="site-main">
