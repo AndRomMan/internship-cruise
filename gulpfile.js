@@ -9,6 +9,7 @@
 'use strict';
 // подключаем Gulp
 const gulp = require('gulp');
+
 const {series, parallel, watch, src, dest} = require('gulp');
 
 // переименование файлов
@@ -90,7 +91,9 @@ const path = {
     build: build + 'img/',
   },
   favicon: {
-    source: source + 'favicon/**/*.*',
+    source: source + 'favicon/initial_img/*.png',
+    manifest: source + 'favicon/*.*',
+    compressedFolder: source + 'favicon/compressed/',
     build,
   },
   font: {
@@ -317,6 +320,41 @@ function eraseMap() {
   return del(build + '/**/*.map');
 }
 
+// ========= favicon module =========
+
+function eraseFavicon() {
+  return del(path.favicon.compressedFolder);
+}
+
+function compressFavicon() {
+  return src(path.favicon.source)
+    .pipe(plumber())
+    .pipe(
+      imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+      ])
+    )
+    .pipe(gulp.dest(path.favicon.compressedFolder));
+}
+
+function copyFaviconManifest() {
+  return src(path.favicon.manifest).pipe(dest(path.favicon.compressedFolder));
+}
+
+
+function copyFaviconToBuild() {
+  return src(path.favicon.compressedFolder + '*.*').pipe(dest(path.favicon.build));
+}
+
+// exports.copyFaviconToBuild = copyFaviconToBuild;
+// exports.copyFaviconManifest = copyFaviconManifest;
+// exports.compressFavicon = compressFavicon;
+// exports.eraseFavicon = eraseFavicon;
+
+
+let getFavicon = gulp.series(eraseFavicon, compressFavicon, copyFaviconManifest, copyFaviconToBuild);
+exports.getFavicon = getFavicon;
+
 // ========= copy module =========
 function copyImgToBuild() {
   return src(path.img.compressedFolder + '/*.{jpg,png,svg,webp}').pipe(dest(path.img.build));
@@ -324,10 +362,6 @@ function copyImgToBuild() {
 
 function copyFontToBuild() {
   return src(path.font.source).pipe(dest(path.font.build));
-}
-
-function copyFaviconToBuild() {
-  return src(path.favicon.source).pipe(dest(path.favicon.build));
 }
 
 // ========= build module =========
@@ -346,8 +380,8 @@ let getImg = gulp.series(
 let startServer = gulp.parallel(watchFiles, browserSync);
 let getWorkFiles = gulp.series(getCSS, getJS, getHTML);
 let workStart = gulp.series(getWorkFiles, startServer);
-let buildProject = gulp.series(eraseBuild, getImg, getWorkFiles, copyFaviconToBuild, copyFontToBuild, eraseMap);
-let buildAndStart = gulp.series(eraseBuild, getImg, getWorkFiles, copyFaviconToBuild, copyFontToBuild, startServer);
+let buildProject = gulp.series(eraseBuild, getImg, getWorkFiles, getFavicon, copyFontToBuild, eraseMap);
+let buildAndStart = gulp.series(eraseBuild, getImg, getWorkFiles, getFavicon, copyFontToBuild, startServer);
 
 // ========= exports =========
 let getSvgToBuild = gulp.series(compressSvg, copyImgToBuild);
@@ -382,7 +416,6 @@ exports.getCSS = getCSS;
 
 // exports.copyImgToBuild = copyImgToBuild;
 // exports.copyFontToBuild = copyFontToBuild;
-// exports.copyFaviconToBuild = copyFaviconToBuild;
 
 // exports.eraseCompressedImg = eraseCompressedImg;
 // exports.eraseCSS = eraseCSS;

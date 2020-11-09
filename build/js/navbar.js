@@ -21,7 +21,7 @@
     menuToggle.classList.add('toggle--active');
   }
 
-  function checkClickToggle(evt) {
+  function checkClickToggle() {
     if (iconBurger && iconClose) {
       iconBurger.classList.toggle('toggle__icon--active');
       iconClose.classList.toggle('toggle__icon--active');
