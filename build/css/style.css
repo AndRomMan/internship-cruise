@@ -308,7 +308,6 @@ input:active {
   @media (max-width: 767px) {
     .nav-list__item {
       margin: 0 0 21px 0;
-      margin-left: 0;
       padding: 0; } }
 
 .nav-list__item a {
