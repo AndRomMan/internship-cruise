@@ -42,7 +42,6 @@
 
 @mixin font($size, $line_height, $weight, $color) {
   font: {
-    family: "Montserrat", "Arial", "Helvetica", sans-serif;
     size: $size;
     weight: $weight;
   };

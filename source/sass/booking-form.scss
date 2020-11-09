@@ -17,6 +17,9 @@
   @include font(14px, 21px, 600, $font_dark_color);
 }
 
+.booking-form input::placeholder {
+  color: $font_dark_color;
+}
 
 .booking-form label[for="useragreement"] {
   display: flex;
