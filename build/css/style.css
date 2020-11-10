@@ -159,7 +159,7 @@ input:active {
 .site-header {
   position: relative; }
 
-.site-header__back {
+.site-header__back img {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -171,12 +171,12 @@ input:active {
   -o-object-position: center center;
      object-position: center center; }
   @media (max-width: 1023px) {
-    .site-header__back {
+    .site-header__back img {
       height: 638px;
       -o-object-position: center top;
          object-position: center top; } }
   @media (max-width: 767px) {
-    .site-header__back {
+    .site-header__back img {
       height: 500px;
       -o-object-position: center 75%;
          object-position: center 75%; } }
