@@ -2,4 +2,5 @@
 
 (function () {
   window.navbar.activatingMenu();
+  window.contactsMap.activatingGoogleMap();
 })();

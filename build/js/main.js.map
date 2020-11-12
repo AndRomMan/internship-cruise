@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["'use strict';\n\n(function () {\n  window.navbar.activatingMenu();\n})();\n"],"file":"main.js"}
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["'use strict';\n\n(function () {\n  window.navbar.activatingMenu();\n  window.contactsMap.activatingGoogleMap();\n})();\n"],"file":"main.js"}
