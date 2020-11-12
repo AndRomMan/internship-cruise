@@ -270,7 +270,7 @@ function compressJpgPng() {
     .pipe(
       imagemin([
         imagemin.mozjpeg({
-          quality: 75,
+          quality: 70,
           progressive: true,
         }),
         imagemin.optipng({optimizationLevel: 3}),

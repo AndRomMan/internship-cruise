@@ -2,32 +2,32 @@
   padding: 111px 0 87px 0;
 
   background-color: $advantages_background;
-  background-image: url("../img/advatages-back_desk@1x.png");
+  background-image: url("../img/advatages-back_desk@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/advatages-back_desk@2x.png");
+    background-image: url("../img/advatages-back_desk@2x.jpg");
   }
 
   @media (max-width: $desktop_breakpoint) {
     padding: 89px 0 70px 0;
 
-    background-image: url("../img/advatages-back_tab@1x.png");
+    background-image: url("../img/advatages-back_tab@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/advatages-back_tab@2x.png");
+      background-image: url("../img/advatages-back_tab@2x.jpg");
     }
   }
 
   @media (max-width: $tablet_breakpoint) {
     padding: 57px 0 37px 0;
 
-    background-image: url("../img/advatages-back_mob@1x.png");
+    background-image: url("../img/advatages-back_mob@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/advatages-back_mob@2x.png");
+      background-image: url("../img/advatages-back_mob@2x.jpg");
     }
   }
 }
