@@ -3,7 +3,6 @@
 
 (function () {
   var siteHeader = document.querySelector('.site-header');
-  // var navbarBlock = document.querySelector('.navbar');
   var menuToggle = document.querySelector('.toggle');
   var iconBurger = document.querySelector('.toggle__icon--burger');
   var iconClose = document.querySelector('.toggle__icon--close');
@@ -12,9 +11,18 @@
   var logoLight = document.querySelector('.logo-light');
   var logoDark = document.querySelector('.logo-dark');
 
+  var siteHeaderBack = document.querySelector('.site-header__back');
+
   if (navbarList) {
     navbarList.classList.add('nav-list--closed');
-    navbarList.classList.add('nav-list--outflow');
+  }
+
+  if (siteHeader) {
+    siteHeader.classList.add('site-header--js');
+  }
+
+  if (siteHeaderBack) {
+    siteHeaderBack.classList.add('site-header__back--js');
   }
 
   if (menuToggle) {

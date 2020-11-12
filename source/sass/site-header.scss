@@ -23,6 +23,8 @@
   }
 
   @media (max-width: $tablet_breakpoint) {
+    top: 235px;
+
     height: 500px;
 
     object-position: center 75%;
@@ -40,4 +42,17 @@
 
 .site-header__navbar {
   //
+}
+
+
+.site-header--js {
+  @media (max-width: $tablet_breakpoint) {
+    top: 0;
+  }
+}
+
+.site-header__back--js img {
+  @media (max-width: $tablet_breakpoint) {
+    top: 0;
+  }
 }

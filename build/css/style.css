@@ -142,6 +142,9 @@ input:focus {
 input:active {
   opacity: 0.7; }
 
+label[for="useragreement"] {
+  cursor: pointer; }
+
 .button {
   margin-top: auto;
   padding: 10px 10px;
@@ -177,12 +180,21 @@ input:active {
          object-position: center top; } }
   @media (max-width: 767px) {
     .site-header__back img {
+      top: 235px;
       height: 500px;
       -o-object-position: center 75%;
          object-position: center 75%; } }
 
 @media (max-width: 767px) {
   .site-header--js-active::after {
+    top: 0; } }
+
+@media (max-width: 767px) {
+  .site-header--js {
+    top: 0; } }
+
+@media (max-width: 767px) {
+  .site-header__back--js img {
     top: 0; } }
 
 .logo {
@@ -265,6 +277,11 @@ input:active {
   list-style: none; }
   @media (max-width: 767px) {
     .nav-list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -272,7 +289,8 @@ input:active {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      padding: 88px 15px 40px 15px; } }
+      padding: 88px 15px 40px 15px;
+      background-color: #f9fbfd; } }
 
 .nav-list--closed {
   display: -webkit-box;
@@ -281,15 +299,6 @@ input:active {
   @media (max-width: 767px) {
     .nav-list--closed {
       display: none; } }
-
-@media (max-width: 767px) {
-  .nav-list--outflow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 0;
-    background-color: #f9fbfd; } }
 
 .nav-list__item {
   margin-left: 33px;
@@ -370,7 +379,7 @@ input:active {
   height: 13px; }
 
 .promo h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
   font-size: 54px;
   font-weight: 700;
   line-height: 66px;
@@ -401,10 +410,16 @@ input:active {
       font-weight: 400;
       line-height: 22px;
       color: #f9fbfd; } }
+  @media (max-width: 767px) {
+    .promo p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #f9fbfd; } }
 
 .promo-wrapper {
   min-height: 434px;
-  padding: 160px 8.2% 272px 8.2%; }
+  padding: 162px 8.2% 272px 8.2%; }
   @media (max-width: 1023px) {
     .promo-wrapper {
       padding: 190px 0 270px 0; } }

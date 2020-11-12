@@ -3,7 +3,7 @@
 }
 
 .promo h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
 
   @include font(54px, 66px, 700, $font_light_color);
 
@@ -30,6 +30,6 @@
   }
 
   @media (max-width: $tablet_breakpoint) {
-    // q
+    @include font(16px, 22px, 400, $font_light_color);
   }
 }
