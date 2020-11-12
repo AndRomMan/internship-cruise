@@ -4,7 +4,7 @@
 (function () {
   var contactsMap = document.querySelector('.contacts-map');
   var googltMapTemplate = document.querySelector('#google-map').content.querySelector('iframe');
-  var mapPlaceholder = document.querySelector('.contacts-map__placeholder');
+  var mapPlaceholder = document.querySelector('.map-placeholder');
 
   function setGoogleMap() {
     var commentFragment = document.createDocumentFragment();
@@ -17,8 +17,8 @@
     contactsMap.removeEventListener('mouseover', checkMapMouseover);
     contactsMap.removeEventListener('mouseout', checkMapMouseout);
 
-    if (!mapPlaceholder.classList.contains('contacts-map__placeholder--inactive')) {
-      mapPlaceholder.classList.add('contacts-map__placeholder--inactive');
+    if (!mapPlaceholder.classList.contains('map-placeholder--inactive')) {
+      mapPlaceholder.classList.add('map-placeholder--inactive');
     }
   }
 
@@ -29,13 +29,13 @@
 
   function checkMapMouseover() {
     if (mapPlaceholder) {
-      mapPlaceholder.classList.toggle('contacts-map__placeholder--inactive');
+      mapPlaceholder.classList.toggle('map-placeholder--inactive');
     }
   }
 
   function checkMapMouseout() {
     if (mapPlaceholder) {
-      mapPlaceholder.classList.toggle('contacts-map__placeholder--inactive');
+      mapPlaceholder.classList.toggle('map-placeholder--inactive');
     }
   }
 

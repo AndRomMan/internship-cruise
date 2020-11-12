@@ -73,23 +73,23 @@
   }
 }
 
-.contacts-map__placeholder {
-  position: absolute;
-  z-index: 2;
+// .contacts-map__placeholder {
+//   position: absolute;
+//   z-index: 2;
 
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 20% 5%;
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 20% 5%;
 
-  text-align: center;
+//   text-align: center;
 
-  background-color: $map_background;
+//   background-color: $map_background;
 
-  @include font(24px, 1.5, 700, $font_light_color);
-}
+//   @include font(24px, 1.5, 700, $font_light_color);
+// }
 
-.contacts-map__placeholder--inactive {
-  display: none;
-}
+// .contacts-map__placeholder--inactive {
+//   display: none;
+// }

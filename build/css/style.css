@@ -1117,7 +1117,7 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
       top: 70.2%;
       left: 38.6%; } }
 
-.contacts-map__placeholder {
+.map-placeholder {
   position: absolute;
   z-index: 2;
   display: block;
@@ -1132,7 +1132,7 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
   line-height: 1.5;
   color: #f9fbfd; }
 
-.contacts-map__placeholder--inactive {
+.map-placeholder--inactive {
   display: none; }
 
 .contacts-text {
