@@ -1,8 +1,8 @@
-.advantages-list {
+.cruises-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // justify-content: space-between;
+  max-width: 1160px;
   margin: 0;
   padding: 0;
 
@@ -13,8 +13,11 @@
   }
 
   @media (max-width: $tablet_breakpoint) {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    //
   }
+}
+
+.cruises-list-wrapper {
+  display: flex;
+  justify-content: center;
 }

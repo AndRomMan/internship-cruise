@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 0 8px 0;
+    margin: 0 0 13px 0;
     padding: 0 0 0 0;
   }
 }
@@ -31,7 +31,7 @@
   }
 
   @media (max-width: $tablet_breakpoint) {
-    margin: 0 0 14px 0;
+    margin: 0 0 13px 0;
     padding: 0;
   }
 }

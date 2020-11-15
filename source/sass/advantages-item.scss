@@ -1,34 +1,31 @@
 .advantages-item {
   position: relative;
-  // width: 31.03448275862069%;
-  // display: flex;
-  // flex-direction: column;
+  // width: 31.035%;
 
-  width: 31.035%;
-  margin: 0 0 30px 0;
-  padding: 80px 30px 20px 30px;
+  width: 29%;
+  max-width: 360px;
+  margin: 0 20px 30px 20px;
+  padding: 82px 30px 19px 30px;
 
   background-color: $background_light;
 
   @media (max-width: $desktop_breakpoint) {
     width: 30.385%;
-    // width: 30.383480825958%;
-    // min-height: 310px;
+    max-width: 206px;
+    margin: 0 15px 30px 15px;
     padding: 71px 10px 14px 20px;
   }
 
   @media (max-width: $tablet_breakpoint) {
     width: 100%;
-    margin: 0 0 30px 0;
-    // min-height: 250px;
-    padding: 71px 20px 14px 20px;
-    // padding: 71px 10px 14px 20px;
+    max-width: 290px;
+    margin: 0 0 31px 0;
+    padding: 71px 20px 13px 20px;
   }
 }
 
-
 .advantages-item h3 {
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 
   @include font(18px, 25px, 500, $font_dark_color);
 
@@ -37,7 +34,6 @@
   }
 
   @media (max-width: $tablet_breakpoint) {
-    // margin: 0 0 30px 0;
     padding-right: 30%;
   }
 }
@@ -54,7 +50,7 @@
 
 .advantages-item__icon {
   position: absolute;
-  top: 45px;
+  top: 46px;
   left: 48px;
 
   transform: translateX(-50%) translateY(-50%);
@@ -66,31 +62,54 @@
 }
 
 .advantages-item__icon--ship {
+  left: 43px;
+
   width: 27px;
   height: 32px;
 
   @media (max-width: $desktop_breakpoint) {
+    left: 31px;
+
     width: 21px;
     height: 26px;
   }
+
+  // @media (max-width: $tablet_breakpoint) {
+  //   //
+  // }
 }
 
 .advantages-item__icon--ticks {
+  left: 49px;
+
   width: 38px;
   height: 21px;
 
   @media (max-width: $desktop_breakpoint) {
+    left: 37px;
+
     width: 33px;
     height: 19px;
   }
+
+  // @media (max-width: $tablet_breakpoint) {
+  //   //
+  // }
 }
 
 .advantages-item__icon--boat {
+  left: 51px;
+
   width: 42px;
   height: 15px;
 
   @media (max-width: $desktop_breakpoint) {
+    left: 39px;
+
     width: 38px;
     height: 13px;
   }
+  // @media (max-width: $tablet_breakpoint) {
+  //   //
+  // }
 }

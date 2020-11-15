@@ -1,12 +1,13 @@
 
 .button {
   margin-top: auto;
-  padding: 10px 10px;
+  padding: 11px 10px;
 
   text-align: center;
 
   background-color: $background_light;
   border: none;
+  border-radius: 0;
   cursor: pointer;
 
   &:hover {

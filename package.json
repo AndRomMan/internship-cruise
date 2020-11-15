@@ -4,7 +4,6 @@
   "private": true,
   "description": "Личный проект HTML academy skills»",
   "devDependencies": {
-    "gulp": "^4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "browser-sync": "^2.26.x",
     "del": "^5.1.x",
@@ -12,6 +11,7 @@
     "eslint-config-htmlacademy": "^0.6.x",
     "eslint-config-prettier": "^6.11.x",
     "eslint-plugin-prettier": "^3.1.x",
+    "gulp": "^4.0.x",
     "gulp-autoprefixer": "^7.0.x",
     "gulp-csso": "^4.0.x",
     "gulp-file-include": "^2.2.x",
@@ -25,6 +25,7 @@
     "gulp-svgstore": "^7.0.x",
     "htmlhint": "^0.14.x",
     "imagemin-webp": "^6.0.x",
+    "imask": "^6.0.5",
     "prettier": "^2.1.x",
     "stylelint": "^13.7.x",
     "stylelint-config-htmlacademy": "^0.1.x",

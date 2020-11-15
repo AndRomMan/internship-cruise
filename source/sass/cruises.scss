@@ -1,24 +1,24 @@
 .cruises {
-  padding: 113px 0 85px 0;
+  padding: 110px 0 90px 0;
 
   @media (max-width: $desktop_breakpoint) {
     padding: 91px 0 70px 0;
   }
 
   @media (max-width: $tablet_breakpoint) {
-    padding: 55px 0 70px 0;
+    padding: 57px 0 35px 0;
   }
 }
 
 .cruises h2 {
-  margin: 0 0 33px 0;
+  margin: 0 0 49px 0;
 
   text-align: center;
 
   @include font(28px, 42px, 600, $font_dark_color);
 
   @media (max-width: $desktop_breakpoint) {
-    margin: 0 0 50px 0;
+    margin: 0 0 48px 0;
 
     @include font(26px, 39px, 600, $font_dark_color);
   }

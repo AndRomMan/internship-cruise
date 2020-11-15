@@ -5,27 +5,22 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 22.414%;
-  min-width: 260px;
-  // max-width: 309px;
+  width: 260px;
+  // height: 386px;
   min-height: 386px;
-  // margin: 15px 15px 15px 15px;
-  margin: 15px 15px 15px 15px;
-  padding: 29px 25px 35px 25px;
+  margin: 0 15px 30px 15px;
+  padding: 25px 25px 25px 25px;
   overflow: hidden;
 
   background-color: $basic_dark_color;
 
   @media (max-width: $desktop_breakpoint) {
-    // width: 44.752%;
-    width: 45.5%;
-    margin: 0 0 15px 0;
-    padding: 30px 35px 32px 35px;
+    width: 309px;
   }
 
   @media (max-width: $tablet_breakpoint) {
-    width: 93.103%;
-    padding: 30px 25px 35px 25px;
+    width: 270px;
+    margin: 0 10px 30px 10px;
   }
 
   &::after {
@@ -43,9 +38,7 @@
 
   &:hover {
     & img {
-      top: -100%;
-
-      transition: ease 0.5s;
+      z-index: -1;
     }
 
     & h3 {
@@ -65,22 +58,45 @@
   }
 }
 
+.cruises-item .button {
+  order: 1;
+}
+
+.cruises-item .button:focus {
+  z-index: 10;
+
+  & ~ picture img {
+    z-index: -1;
+  }
+
+  & ~ h3 {
+    position: static;
+  }
+
+  & ~ dl {
+    position: relative;
+    z-index: 9;
+  }
+}
+
 .cruises-item h3 {
   position: relative;
-  bottom: -92.5%;
-  left: 2%;
-  z-index: 5;
+  top: 312px;
+  left: 5px;
+  z-index: 9;
 
   margin: 0 0 13px 0;
 
   @include font(18px, 27px, 500, $font_light_color);
 
   @media (max-width: $desktop_breakpoint) {
-    bottom: -94.5%;
+    top: 308px;
+    left: 10px;
   }
 
   @media (max-width: $tablet_breakpoint) {
-    bottom: -97.5%;
+    top: 318px;
+    left: 0;
   }
 }
 
@@ -110,7 +126,8 @@
 }
 
 .cruises-item dd {
-  margin: 0 0 12px 0;
+  margin: 0 0 11px 0;
+  overflow: hidden;
 
   @include font(14px, 20px, 400, $font_light_color);
 }

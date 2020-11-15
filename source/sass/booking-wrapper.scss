@@ -7,10 +7,10 @@
 
   @media (max-width: $desktop_breakpoint) {
     flex-direction: column;
-    padding: 49px 60px 101px 60px;
+    padding: 49px 60px 100px 60px;
   }
 
   @media (max-width: $tablet_breakpoint) {
-    padding: 20px 0 66px 0;
+    padding: 19px 0 65px 0;
   }
 }

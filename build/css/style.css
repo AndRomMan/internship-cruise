@@ -85,7 +85,6 @@ a {
       padding: 0 15px; } }
 
 body {
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   background-color: #f9fbfd; }
 
 a[href]:hover {
@@ -147,10 +146,11 @@ label[for="useragreement"] {
 
 .button {
   margin-top: auto;
-  padding: 10px 10px;
+  padding: 11px 10px;
   text-align: center;
   background-color: #f9fbfd;
   border: none;
+  border-radius: 0;
   cursor: pointer; }
   .button:hover {
     outline: 4px solid #2770b4; }
@@ -316,18 +316,21 @@ label[for="useragreement"] {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 1023px) {
     .nav-list__item a {
       font-size: 14px;
       font-weight: 500;
       line-height: 17px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
   @media (max-width: 767px) {
     .nav-list__item a {
       font-size: 18px;
       font-weight: 500;
       line-height: 22px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
 
 .button-wrapper {
@@ -353,6 +356,7 @@ label[for="useragreement"] {
   display: none;
   background-color: transparent;
   border: none;
+  border-radius: 0;
   cursor: pointer; }
   .toggle:hover {
     outline: 4px solid #2770b4; }
@@ -383,6 +387,7 @@ label[for="useragreement"] {
   font-size: 54px;
   font-weight: 700;
   line-height: 66px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 1023px) {
     .promo h2 {
@@ -390,12 +395,14 @@ label[for="useragreement"] {
       font-size: 50px;
       font-weight: 700;
       line-height: 61px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
   @media (max-width: 767px) {
     .promo h2 {
       font-size: 36px;
       font-weight: 700;
       line-height: 45px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
 
 .promo p {
@@ -403,18 +410,21 @@ label[for="useragreement"] {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 1023px) {
     .promo p {
       font-size: 18px;
       font-weight: 400;
       line-height: 22px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
   @media (max-width: 767px) {
     .promo p {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
 
 .promo-wrapper {
@@ -437,7 +447,7 @@ label[for="useragreement"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 120px 0 114px 0; }
+  padding: 120px 0 116px 0; }
   @media (max-width: 1023px) {
     .description-wrapper {
       -webkit-box-align: start;
@@ -453,7 +463,7 @@ label[for="useragreement"] {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding: 57px 0 60px 0; } }
+      padding: 57px 0 61px 0; } }
 
 .description-wrapper img {
   width: 560px;
@@ -483,6 +493,7 @@ label[for="useragreement"] {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .description-text h3 {
@@ -490,6 +501,7 @@ label[for="useragreement"] {
       font-size: 26px;
       font-weight: 600;
       line-height: 36px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
   @media (max-width: 767px) {
     .description-text h3 {
@@ -497,6 +509,7 @@ label[for="useragreement"] {
       font-size: 24px;
       font-weight: 600;
       line-height: 34px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
 
 .description-text p {
@@ -504,10 +517,11 @@ label[for="useragreement"] {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .advantages {
-  padding: 111px 0 87px 0;
+  padding: 110px 0 90px 0;
   background-color: #e3ecf6;
   background-image: url("../img/advatages-back_desk@1x.jpg");
   background-repeat: no-repeat;
@@ -525,31 +539,34 @@ label[for="useragreement"] {
       background-image: url("../img/advatages-back_tab@2x.jpg"); } }
   @media (max-width: 767px) {
     .advantages {
-      padding: 57px 0 37px 0;
+      padding: 58px 0 34px 0;
       background-image: url("../img/advatages-back_mob@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .advantages {
       background-image: url("../img/advatages-back_mob@2x.jpg"); } }
 
 .advantages h2 {
-  margin: 0 0 50px 0;
+  margin: 0 0 49px 0;
   text-align: center;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .advantages h2 {
       font-size: 26px;
       font-weight: 600;
       line-height: 39px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
   @media (max-width: 767px) {
     .advantages h2 {
-      margin: 0 0 31px 0;
+      margin: 0 0 29px 0;
       font-size: 24px;
       font-weight: 600;
       line-height: 36px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
 
 .advantages-list {
@@ -558,9 +575,9 @@ label[for="useragreement"] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -569,29 +586,40 @@ label[for="useragreement"] {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .advantages-item {
   position: relative;
-  width: 31.035%;
-  margin: 0 0 30px 0;
-  padding: 80px 30px 20px 30px;
+  width: 29%;
+  max-width: 360px;
+  margin: 0 20px 30px 20px;
+  padding: 82px 30px 19px 30px;
   background-color: #f9fbfd; }
   @media (max-width: 1023px) {
     .advantages-item {
       width: 30.385%;
+      max-width: 206px;
+      margin: 0 15px 30px 15px;
       padding: 71px 10px 14px 20px; } }
   @media (max-width: 767px) {
     .advantages-item {
       width: 100%;
-      margin: 0 0 30px 0;
-      padding: 71px 20px 14px 20px; } }
+      max-width: 290px;
+      margin: 0 0 31px 0;
+      padding: 71px 20px 13px 20px; } }
 
 .advantages-item h3 {
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .advantages-item h3 {
@@ -605,11 +633,12 @@ label[for="useragreement"] {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .advantages-item__icon {
   position: absolute;
-  top: 45px;
+  top: 46px;
   left: 48px;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%); }
@@ -619,51 +648,59 @@ label[for="useragreement"] {
       left: 36px; } }
 
 .advantages-item__icon--ship {
+  left: 43px;
   width: 27px;
   height: 32px; }
   @media (max-width: 1023px) {
     .advantages-item__icon--ship {
+      left: 31px;
       width: 21px;
       height: 26px; } }
 
 .advantages-item__icon--ticks {
+  left: 49px;
   width: 38px;
   height: 21px; }
   @media (max-width: 1023px) {
     .advantages-item__icon--ticks {
+      left: 37px;
       width: 33px;
       height: 19px; } }
 
 .advantages-item__icon--boat {
+  left: 51px;
   width: 42px;
   height: 15px; }
   @media (max-width: 1023px) {
     .advantages-item__icon--boat {
+      left: 39px;
       width: 38px;
       height: 13px; } }
 
 .cruises {
-  padding: 113px 0 85px 0; }
+  padding: 110px 0 90px 0; }
   @media (max-width: 1023px) {
     .cruises {
       padding: 91px 0 70px 0; } }
   @media (max-width: 767px) {
     .cruises {
-      padding: 55px 0 70px 0; } }
+      padding: 57px 0 35px 0; } }
 
 .cruises h2 {
-  margin: 0 0 33px 0;
+  margin: 0 0 49px 0;
   text-align: center;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .cruises h2 {
-      margin: 0 0 50px 0;
+      margin: 0 0 48px 0;
       font-size: 26px;
       font-weight: 600;
       line-height: 39px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
   @media (max-width: 767px) {
     .cruises h2 {
@@ -671,6 +708,7 @@ label[for="useragreement"] {
       font-size: 24px;
       font-weight: 600;
       line-height: 36px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
 
 .cruises-list {
@@ -679,9 +717,32 @@ label[for="useragreement"] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1160px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.cruises-list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.cruises-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1160px;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -700,22 +761,19 @@ label[for="useragreement"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 22.414%;
-  min-width: 260px;
+  width: 260px;
   min-height: 386px;
-  margin: 15px 15px 15px 15px;
-  padding: 29px 25px 35px 25px;
+  margin: 0 15px 30px 15px;
+  padding: 25px 25px 25px 25px;
   overflow: hidden;
   background-color: #011c40; }
   @media (max-width: 1023px) {
     .cruises-item {
-      width: 45.5%;
-      margin: 0 0 15px 0;
-      padding: 30px 35px 32px 35px; } }
+      width: 309px; } }
   @media (max-width: 767px) {
     .cruises-item {
-      width: 93.103%;
-      padding: 30px 25px 35px 25px; } }
+      width: 270px;
+      margin: 0 10px 30px 10px; } }
   .cruises-item::after {
     content: "";
     position: absolute;
@@ -727,9 +785,7 @@ label[for="useragreement"] {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
     background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%); }
   .cruises-item:hover img {
-    top: -100%;
-    -webkit-transition: ease 0.5s;
-    transition: ease 0.5s; }
+    z-index: -1; }
   .cruises-item:hover h3 {
     position: static; }
   .cruises-item:hover::after {
@@ -739,22 +795,40 @@ label[for="useragreement"] {
     position: relative;
     z-index: 2; }
 
+.cruises-item .button {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.cruises-item .button:focus {
+  z-index: 10; }
+  .cruises-item .button:focus ~ picture img {
+    z-index: -1; }
+  .cruises-item .button:focus ~ h3 {
+    position: static; }
+  .cruises-item .button:focus ~ dl {
+    position: relative;
+    z-index: 9; }
+
 .cruises-item h3 {
   position: relative;
-  bottom: -92.5%;
-  left: 2%;
-  z-index: 5;
+  top: 312px;
+  left: 5px;
+  z-index: 9;
   margin: 0 0 13px 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 1023px) {
     .cruises-item h3 {
-      bottom: -94.5%; } }
+      top: 308px;
+      left: 10px; } }
   @media (max-width: 767px) {
     .cruises-item h3 {
-      bottom: -97.5%; } }
+      top: 318px;
+      left: 0; } }
 
 .cruises-item img {
   position: absolute;
@@ -776,19 +850,23 @@ label[for="useragreement"] {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
 
 .cruises-item dd {
-  margin: 0 0 12px 0;
+  margin: 0 0 11px 0;
+  overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
 
 .cruises-item a {
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking {
@@ -830,10 +908,10 @@ label[for="useragreement"] {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 49px 60px 101px 60px; } }
+      padding: 49px 60px 100px 60px; } }
   @media (max-width: 767px) {
     .booking-wrapper {
-      padding: 20px 0 66px 0; } }
+      padding: 19px 0 65px 0; } }
 
 .booking-appeal {
   -ms-flex-negative: 1;
@@ -855,7 +933,7 @@ label[for="useragreement"] {
       padding: 40px 0 40px 0; } }
   @media (max-width: 767px) {
     .booking-appeal {
-      padding: 40px 0 25px 0; } }
+      padding: 40px 0 24px 0; } }
 
 .booking-appeal h2 {
   margin: 0 0 7px 0;
@@ -863,6 +941,7 @@ label[for="useragreement"] {
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .booking-appeal h2 {
@@ -872,13 +951,15 @@ label[for="useragreement"] {
       font-size: 34px;
       font-weight: 700;
       line-height: 51px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
   @media (max-width: 767px) {
     .booking-appeal h2 {
-      margin: 0 0 13px 0;
+      margin: 0 0 14px 0;
       font-size: 24px;
       font-weight: 700;
       line-height: 31px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
 
 .booking-appeal p {
@@ -887,6 +968,7 @@ label[for="useragreement"] {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .booking-appeal p {
@@ -900,6 +982,7 @@ label[for="useragreement"] {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #011c40; } }
 
 .booking-card {
@@ -909,7 +992,7 @@ label[for="useragreement"] {
       -ms-flex-align: center;
           align-items: center;
   width: 403px;
-  padding: 44px 50px 51px 50px;
+  padding: 44px 50px 50px 50px;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
           box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15); }
@@ -919,18 +1002,21 @@ label[for="useragreement"] {
       padding: 35px 30px 40px 30px; } }
 
 .booking-card p {
-  margin: 0 0 28px 0;
+  margin: 0 0 27px 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 767px) {
     .booking-card p {
       max-width: 270px;
+      margin: 0 0 28px 0;
       text-align: center;
       font-size: 18px;
       font-weight: 500;
       line-height: 25px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
 
 .booking-form {
@@ -946,30 +1032,46 @@ label[for="useragreement"] {
   margin: 0 0 20px 0;
   padding: 11px 16px 11px 16px;
   border: none;
+  border-radius: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: #011c40; }
-
-.booking-form button {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking-form input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking-form input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking-form input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking-form input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking-form input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .booking-form label[for="useragreement"] {
@@ -982,16 +1084,19 @@ label[for="useragreement"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 10px;
   font-weight: 400;
   line-height: 13px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 767px) {
     .booking-form label[for="useragreement"] {
+      margin-bottom: 26px;
       font-size: 10px;
       font-weight: 400;
       line-height: 12px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
 
 .booking-form__checkbox {
@@ -1026,6 +1131,13 @@ input[id="useragreement"]:focus ~ .booking-form__checkbox {
 input[id="useragreement"]:active ~ .booking-form__checkbox {
   opacity: 0.7; }
 
+.booking-form button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  color: #011c40; }
+
 .contacts-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1055,7 +1167,7 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding: 48px 0 62px 0; } }
+      padding: 48px 0 65px 0; } }
 
 .contacts-map {
   position: relative;
@@ -1130,6 +1242,7 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
 
 .map-placeholder--inactive {
@@ -1142,23 +1255,25 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
       padding: 66px 0 20px 30px; } }
   @media (max-width: 767px) {
     .contacts-text {
-      padding: 10px 0 21px 0; } }
+      padding: 10px 0 15px 0; } }
 
 .contacts-text h4 {
   margin: 0 0 32px 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
   @media (max-width: 1023px) {
     .contacts-text h4 {
-      margin: 0 0 29px 0; } }
+      margin: 0 0 27px 0; } }
 
 .contacts-text p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .contacts-text span {
@@ -1166,6 +1281,7 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40; }
 
 .contacts-text__icon {
@@ -1184,9 +1300,6 @@ input[id="useragreement"]:active ~ .booking-form__checkbox {
   width: 18px;
   height: 28px;
   margin-top: -3px; }
-  @media (max-width: 1023px) {
-    .contacts-text__icon--phone {
-      margin-top: 0; } }
 
 a.contacts-text__tel:hover .contacts-text__icon {
   left: -30px; }
@@ -1208,10 +1321,7 @@ a.contacts-text__tel:active .contacts-text__icon {
   padding: 0 0 0 30px; }
   @media (max-width: 1023px) {
     .contacts-text-wrapper {
-      margin: 0 0 18px 0; } }
-  @media (max-width: 767px) {
-    .contacts-text-wrapper {
-      margin: 0 0 19px 0; } }
+      margin: 0 0 21px 0; } }
 
 .contacts-icon {
   -ms-flex-negative: 0;
@@ -1235,10 +1345,10 @@ a.contacts-text__tel:active .contacts-text__icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 48px 0 48px 0; }
+  padding: 50px 0 46px 0; }
   @media (max-width: 1023px) {
     .footer-wrapper {
-      padding: 40px 0 40px 0; } }
+      padding: 40px 0 43px 0; } }
   @media (max-width: 767px) {
     .footer-wrapper {
       -webkit-box-orient: vertical;
@@ -1248,7 +1358,7 @@ a.contacts-text__tel:active .contacts-text__icon {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding: 40px 0 40px 0; } }
+      padding: 40px 0 36px 0; } }
 
 .footer-nav {
   display: -webkit-box;
@@ -1299,7 +1409,7 @@ a.contacts-text__tel:active .contacts-text__icon {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      margin: 0 0 8px 0;
+      margin: 0 0 13px 0;
       padding: 0 0 0 0; } }
 
 .footer-nav__item {
@@ -1310,7 +1420,7 @@ a.contacts-text__tel:active .contacts-text__icon {
       margin: 0 0 0 23px; } }
   @media (max-width: 767px) {
     .footer-nav__item {
-      margin: 0 0 14px 0;
+      margin: 0 0 13px 0;
       padding: 0; } }
 
 .footer-nav-list a {
@@ -1318,12 +1428,14 @@ a.contacts-text__tel:active .contacts-text__icon {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #f9fbfd; }
   @media (max-width: 1023px) {
     .footer-nav-list a {
       font-size: 12px;
       font-weight: 500;
       line-height: 15px;
+      font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
       color: #f9fbfd; } }
 
 .socials {
