@@ -48,6 +48,12 @@
   }
 }
 
+.nav-list__item--routes {
+  @media (max-width: $tablet_breakpoint) {
+    order: -1;
+  }
+}
+
 .nav-list__item a {
   text-decoration: none;
 

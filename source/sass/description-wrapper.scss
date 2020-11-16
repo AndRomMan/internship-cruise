@@ -12,6 +12,16 @@
   @media (max-width: $tablet_breakpoint) {
     flex-direction: column;
     align-items: center;
+    padding: 122px 0 61px 0;
+  }
+
+  @media (max-width: $mobile_additional_breakpoint) {
+    padding: 57px 0 61px 0;
+  }
+}
+
+.description-wrapper--js {
+  @media (max-width: $tablet_breakpoint) {
     padding: 57px 0 61px 0;
   }
 }

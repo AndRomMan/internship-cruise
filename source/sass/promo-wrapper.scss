@@ -9,6 +9,12 @@
   }
 
   @media (max-width: $tablet_breakpoint) {
+    padding: 346px 0 173px 0;
+  }
+}
+
+.promo-wrapper--js {
+  @media (max-width: $tablet_breakpoint) {
     padding: 110px 0 173px 0;
   }
 }
