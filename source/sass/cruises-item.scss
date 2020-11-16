@@ -111,8 +111,8 @@
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
-  // FIXME отключена из-за проблем в iOs Safari
+  // FIXME отключены из-за проблем в iOs Safari
+  // object-fit: cover;
   // object-position: center center;
 }
 
