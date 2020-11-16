@@ -112,7 +112,8 @@
   height: 100%;
 
   object-fit: cover;
-  object-position: center center;
+  // FIXME отключена из-за проблем в iOs Safari
+  // object-position: center center;
 }
 
 .cruises-item dl {
