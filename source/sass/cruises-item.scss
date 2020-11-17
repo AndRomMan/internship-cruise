@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 260px;
-  // height: 386px;
   min-height: 386px;
   margin: 0 15px 30px 15px;
   padding: 25px 25px 25px 25px;
@@ -38,7 +37,7 @@
 
   &:hover {
     & img {
-      z-index: -1;
+      display: none;
     }
 
     & h3 {
@@ -46,9 +45,7 @@
     }
 
     &::after {
-      z-index: 0;
-
-      background: none;
+      display: none;
     }
 
     & .button {
@@ -66,7 +63,7 @@
   z-index: 10;
 
   & ~ picture img {
-    z-index: -1;
+    display: none;
   }
 
   & ~ h3 {
