@@ -22,6 +22,7 @@
     margin: 0 10px 30px 10px;
   }
 
+
   &:hover {
     & img {
       display: none;
@@ -48,6 +49,7 @@
   left: 0;
   z-index: 4;
 
+  display: none;
   width: 100%;
   height: 100%;
 
@@ -76,7 +78,8 @@
 }
 
 .cruises-item h3 {
-  position: relative;
+  // position: relative;
+  position: static;
   top: 312px;
   left: 5px;
   z-index: 9;
@@ -102,8 +105,8 @@
   top: 0;
   left: 0;
   z-index: 4;
-  // display: none;
 
+  display: none;
   width: 100%;
   height: 100%;
 
@@ -131,4 +134,18 @@
 
 .cruises-item a {
   @include font(14px, 21px, 600, $font_dark_color);
+}
+
+.cruises-item--js {
+  & h3 {
+    position: relative;
+  }
+
+  & img {
+    display: block;
+  }
+
+  & .cruises-item__gradient {
+    display: block;
+  }
 }
