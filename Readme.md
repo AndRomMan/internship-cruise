@@ -1,6 +1,6 @@
 # Проект "Круизы в Антарктику"
 
-  [Сайт в интернете](https://demindesign.ru/cruise/).
+  [Сайт в интернете](https://andromman.github.io/cruise/build/)
 
 Проект создан в рамках Акселератора [HTML Academy](https://htmlacademy.ru/about).
 
